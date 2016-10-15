@@ -5,6 +5,8 @@
  * @param headings 헤딩 태그명 (예: "h2")
  */
 function headingLink(documentClassName, headingTagName) {
+  documentClassName = documentClassName.replace('.', '');
+
   var doc = document.getElementsByClassName(documentClassName)[0],
       headings = doc.getElementsByTagName(headingTagName),
       i,
